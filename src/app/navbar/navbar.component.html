@@ -11,7 +11,7 @@
             
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">       
-        <li class="nav-item"><a class="nav-link text-dark" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#" id="link">About</a></li>
         <li class="nav-item" ><a class="nav-link text-dark" href="#" routerLink="/portrait">Portrait</a></li>    
         <li class="nav-item"><a class="nav-link text-dark" href="#">Landscape</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="#">Events</a></li>
@@ -20,9 +20,21 @@
       </ul>
       <div class="form-inline mt-2 mt-md-0">
         <a class="nav-link" href="http://facebook.com/karan.zakhmi" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a class="nav-link" href="http://facebook.com/karan.zakhmi"><i class="fab fa-instagram"></i></a>
-        <a class="nav-link" href="http://facebook.com/karan.zakhmi"><i class="fab fa-twitter"></i></a>
-        <a class="nav-link" href="http://facebook.com/karan.zakhmi"><i class="fab fa-snapchat-ghost"></i></a>
+        <a class="nav-link" href="https://www.instagram.com/krnzakhmi/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="nav-link" href="https://twitter.com/krnzakhmi" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i class="fab fa-snapchat-ghost"></i></a>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered bg-light" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="../../assets/Snapcode.jpg" height="400" width="auto"/>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!--            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
       <!--            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->

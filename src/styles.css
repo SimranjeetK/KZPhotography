@@ -2,4 +2,19 @@
   font-family: 'Amatic SC', cursive;
   font-size: 25px;
 }
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /*margin-bottom: 60px; !* Margin bottom by footer height *!*/
+  overflow-x: revert;
+}
+html,body {
+  margin:0 !important;
+  padding:0 !important;
+}
 /* You can add global styles to this file, and also import other style files */
+#link:hover{
+  font-weight: bold;
+}
