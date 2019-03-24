@@ -7,14 +7,18 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PortraitComponent } from './portrait/portrait.component';
 import { LandscapeComponent } from './landscape/landscape.component';
+import { EventsComponent } from './events/events.component';
+import { WildlifeComponent } from './wildlife/wildlife.component';
 
 
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'portrait', component: PortraitComponent}
-
+  {path: 'portrait', component: PortraitComponent},
+  {path: 'landscape', component: LandscapeComponent},
+  {path: 'event', component: EventsComponent},
+  {path: 'wildlife', component: WildlifeComponent}
 ];
 
 
@@ -25,7 +29,9 @@ const appRoutes: Routes = [
     FooterComponent,
     HomeComponent,
     PortraitComponent,
-    LandscapeComponent
+    LandscapeComponent,
+    EventsComponent,
+    WildlifeComponent
   ],
   imports: [
     BrowserModule,

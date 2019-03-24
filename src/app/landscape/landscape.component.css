@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  counter-reset: count;
+}
+
+.slider {
+  width: 100%;
+  margin: 70px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px;
+  height: 500px;
+  background-color: GhostWhite;
+}
+.slider:before, .slider:after {
+  content: '';
+  flex: 1 0 auto;
+  display: inline-block;
+}
+.slider:after {
+  width: 10px;
+}
+
+.item {
+  display: inline-block;
+  width: 500px;
+
+  margin: 10px;
+  counter-increment: count;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: deepskyblue;
+  /*background-image: url(../../assets/landscapes/1.jpg);*/
+}
+
+.item:before {
+  content: counter(count);
+  font-size: 2em;
+  font-weight: bold;
+  opacity: .25;
+}
