@@ -4,13 +4,13 @@ html, body {
 
 body {
   display: flex;
-  overflow: hidden;
+  overflow: hidden !important;
   counter-reset: count;
 }
 
 .slider {
   width: 100%;
-  margin: 70px;
+  margin-top: 53px;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
@@ -19,6 +19,7 @@ body {
   height: 500px;
   background-color: GhostWhite;
 }
+
 .slider:before, .slider:after {
   content: '';
   flex: 1 0 auto;
@@ -29,11 +30,11 @@ body {
 }
 
 .item {
-  display: inline-block;
-  width: 500px;
-
+  /*display: inline-block;*/
+  width: 700px !important;
+height: 462px !important;
   margin: 10px;
-  counter-increment: count;
+  /*counter-increment: count;*/
   flex: 0 0 auto;
   display: flex;
   align-items: center;
