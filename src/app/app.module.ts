@@ -9,8 +9,8 @@ import { PortraitComponent } from './portrait/portrait.component';
 import { LandscapeComponent } from './landscape/landscape.component';
 import { EventsComponent } from './events/events.component';
 import { WildlifeComponent } from './wildlife/wildlife.component';
-
-
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,9 +18,10 @@ const appRoutes: Routes = [
   {path: 'portrait', component: PortraitComponent},
   {path: 'landscape', component: LandscapeComponent},
   {path: 'event', component: EventsComponent},
-  {path: 'wildlife', component: WildlifeComponent}
+  {path: 'wildlife', component: WildlifeComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'contact', component: ContactComponent}
 ];
-
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ const appRoutes: Routes = [
     PortraitComponent,
     LandscapeComponent,
     EventsComponent,
-    WildlifeComponent
+    WildlifeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

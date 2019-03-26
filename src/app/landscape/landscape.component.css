@@ -1,23 +1,13 @@
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  overflow: hidden !important;
-  counter-reset: count;
-}
-
 .slider {
   width: 100%;
-  margin-top: 53px;
+  margin-top: 62px;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll !important;
   overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+  /*-webkit-overflow-scrolling: auto;*/
   padding: 10px;
-  height: 500px;
-  background-color: GhostWhite;
+  height: 560px;
+
 }
 
 .slider:before, .slider:after {
@@ -27,25 +17,53 @@ body {
 }
 .slider:after {
   width: 10px;
+  overflow-x: scroll;
 }
 
 .item {
-  /*display: inline-block;*/
-  width: 700px !important;
-height: 462px !important;
+  width: auto;
+  height: 550px !important;
   margin: 10px;
-  /*counter-increment: count;*/
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: deepskyblue;
-  /*background-image: url(../../assets/landscapes/1.jpg);*/
+
 }
 
-.item:before {
-  content: counter(count);
-  font-size: 2em;
-  font-weight: bold;
-  opacity: .25;
+@media only screen and (max-width: 400px) {
+  .slider {
+    width: 100%;
+    margin-top: 62px;
+    display: flex;
+    overflow-x: scroll !important;
+    overflow-y: hidden;
+    /*-webkit-overflow-scrolling: auto;*/
+    padding: 10px;
+    height: 560px;
+
+  }
+
+  .slider:before, .slider:after {
+    content: '';
+    flex: 1 0 auto;
+    display: inline-block;
+  }
+  .slider:after {
+    width: 10px;
+    overflow-x: scroll;
+  }
+
+  .item {
+    width: 500px;
+    height: 500px !important;
+    margin: 10px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: deepskyblue;
+
+  }
 }

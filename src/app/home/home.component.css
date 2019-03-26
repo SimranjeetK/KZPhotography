@@ -1,12 +1,81 @@
-body{ min-height:1500px;
-  background:url(https://img4.goodfon.com/original/1920x1080/3/bb/iron-man-art-vector-art-marvel-minimal-avengers-superheroes.jpg) fixed;
-  background-size:cover;}
-img {
-  max-width: 100%;
-  height: auto;
+.hls_sol{
+  margin-top: 65px;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 0px; /* Firefox */
+  column-gap: 0px;
 }
-ul li {
-  list-style: none;
+ul {
+  margin: 0;
+  padding: 0;
+  display: flow-root;
+}
+li {
+  /*width: 25%;*/
+  max-width: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 690px
+}
+/*.hls_sol li img {
+  height: 100%;
+}*/
+img {
+  height: 690px;
+  -webkit-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+.hls_sol li:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*h1{
+  text-align:center;
+  margin:30px 0;
+  color:#fff;
+}*/
+.hls_sol_data {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transition: 0.3s ease-in-out;
+  background: rgba(0,0,0,0.28);
+  visibility: hidden
+}
+.hls_sol ul li:hover .hls_sol_data {
+  /*background: rgba(255,0,4,0.46);*/
+  background: rgba(211,211,211, 0.2);
+  transition: 0.3s ease-in-out;
+  visibility: visible
+}
+h3 {
+  color: #fff;
+  /*transition: 0.5s*/
+}
+.hls_sol_data:hover h3 {
+  /*transition: 0.5s ease;*/
+}
+.hls_data {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 60px 20px;
+}
+
+.hls_data a {
+  display: block;
 }
 a, a:hover {
   text-decoration: none;
@@ -17,19 +86,66 @@ a, a:hover {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-h1{ text-align:center; margin:30px 0; color:#fff;}
+
+.hls_title {
+  text-align: right;
+  font-size: 22px;
+  border-bottom: 2px solid white;
+  padding: 10px 0;
+  margin: 10px 0;
+  color: #fff;
+}
+.hls_title:hover {
+  color: #fff;
+}
+.btn-pro {
+  border-radius: 0;
+  color: #222;
+  background: #fff;
+  display: inline-block !important;
+  float: right;
+}
+.btn-pro:hover {
+  color: #fff;
+  background: #222;
+}
+@media (max-width: 500px) {
+  .hls_sol {
+    /*width: 400px;
+    height: 400px;*/
+    -webkit-column-count: 1; /*!* Chrome, Safari, Opera *!*/
+    -moz-column-count: 1; /*!* Firefox *!*/
+    column-count: 1;
+  }
+}
+
+
+
+
+
+
+/*
+body{
+  min-height:1500px;
+ !* background:url(https://img4.goodfon.com/original/1920x1080/3/bb/iron-man-art-vector-art-marvel-minimal-avengers-superheroes.jpg) fixed;*!
+  background-size:cover;
+}
 .hls_sol{
   margin-top: 70px;
+  -webkit-column-count: 4; !* Chrome, Safari, Opera *!
+  -moz-column-count: 4; !* Firefox *!
+  column-count: 4;
 }
 .hls_sol li {
-  width: 25%;
+  !*width: 25%;*!
   max-width: 100%;
   display: inline-block;
   float: left;
   text-align: center;
   overflow: hidden;
   position: relative;
-  height: 523px
+  height: 581px;
+
 }
 .hls_sol li img {
   height: 100%;
@@ -50,6 +166,29 @@ h1{ text-align:center; margin:30px 0; color:#fff;}
   -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
 }
+img {
+  max-width: 100%;
+  height: auto;
+!*  padding: 0;*!
+}
+!*ul li {
+!*  list-style: none;*!
+}*!
+a, a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  outline: none;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+h1{
+  text-align:center;
+  margin:30px 0;
+  color:#fff;
+}
+
 .hls_sol .hls_sol_data {
   position: absolute;
   left: 0;
@@ -107,7 +246,7 @@ h1{ text-align:center; margin:30px 0; color:#fff;}
 }
 .sec_title {
   text-align: center;
-  margin: 30px 0 30px;
+  margin:30px;
 }
 .hls_data {
   left: unset;
@@ -119,3 +258,14 @@ h1{ text-align:center; margin:30px 0; color:#fff;}
   right: 0;
   transition: 1s ease
 }
+
+!*@media (max-width: 500px) {
+  .hls_sol {
+    !*width: 400px;
+    height: 400px;*!
+    -webkit-column-count: 1; !* Chrome, Safari, Opera *!
+    -moz-column-count: 1; !* Firefox *!
+    column-count: 1;
+  }
+}*!
+*/
