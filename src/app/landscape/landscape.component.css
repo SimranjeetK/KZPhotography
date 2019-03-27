@@ -43,8 +43,11 @@
     padding: 10px;
     height: 560px;
 
-  }
 
+  }
+  .frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
   .slider:before, .slider:after {
     content: '';
     flex: 1 0 auto;

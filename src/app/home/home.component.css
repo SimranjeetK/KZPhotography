@@ -20,13 +20,13 @@ li {
   text-align: center;
   overflow: hidden;
   position: relative;
-  height: 690px
+  height: 590px
 }
 /*.hls_sol li img {
   height: 100%;
 }*/
 img {
-  height: 690px;
+  height: 590px;
   -webkit-transition: transform 0.5s ease;
   -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
@@ -89,7 +89,8 @@ a, a:hover {
 
 .hls_title {
   text-align: right;
-  font-size: 22px;
+  font-size: 27px;
+  font-weight: bolder;
   border-bottom: 2px solid white;
   padding: 10px 0;
   margin: 10px 0;
