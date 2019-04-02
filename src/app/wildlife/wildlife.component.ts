@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Lightbox } from 'ngx-lightbox';
+
 import {$} from 'protractor';
+import {ImageSrc} from '../img-obj';
 
 @Component({
   selector: 'app-wildlife',
@@ -8,8 +11,10 @@ import {$} from 'protractor';
 })
 export class WildlifeComponent implements OnInit {
 
-  constructor() { }
+constructor() {
+}
   ngOnInit() {
   }
-
 }
+
+

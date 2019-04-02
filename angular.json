@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/lightbox2/dist/css/lightbox.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/lightbox2/dist/js/lightbox.js"
+
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

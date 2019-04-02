@@ -20,7 +20,8 @@ h5{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    margin-top: 70px;
+    margin-top: 90px;
+    margin-bottom:35px;
   }
   .grid > [class*="column-"] {
     margin-top: 15px;
